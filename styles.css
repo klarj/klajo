@@ -1,0 +1,217 @@
+@font-face {
+    font-family: Poppins;
+    src: url("./fonts/Poppins-Regular.ttf");
+}
+
+p {
+    font-family: Poppins;
+    text-align: center;
+    color: white;
+}
+
+.body1 {
+    background-image: url("/images/norrpa.jpeg");
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.body2 {
+    background-color: rgb(224, 205, 174);
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.h11 {
+    font-family: rafaella, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 80px;
+    margin: auto;
+    margin-top: 50px;
+    color: rgb(150, 33, 42);
+}
+
+.h12 {
+    font-family: rafaella, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 60px;
+    margin: auto;
+    margin-top: 50px;
+    color: rgb(150, 33, 42);
+}
+
+h2 {
+    font-family: "futura-pt", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    margin: 0;
+}
+
+.dropbtn {
+    font-size: 16px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: #f5f5f5;
+    background-color: rgb(150, 33, 42);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-top: 15px;
+    font-family: "futura-pt", sans-serif;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 35px;
+    margin-top: -10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 160px;
+    font-family: Poppins;
+    font-weight: bolder;
+    font-size: 14px;
+}
+
+.dropdown-content a {
+    color: #2E4053;
+    text-decoration: none;
+    display: block;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #EAECEE;
+}
+
+.dropdown-content a:hover {
+    background-color: #BFC4CE;
+    transition: all .6s ease;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: rgb(133, 176, 164);
+    color: #D6DBDF;
+    transition: all .5s ease;
+}
+
+article {
+    width: 300px;
+    margin-left: 200px;
+    background-color: rgb(224, 205, 174);
+}
+
+.home {
+    width: 25px;
+}
+
+@media only screen and (min-width: 481px) {
+    div.dropdown {
+        width: 25px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    div.dropdown {
+        width: 15px;
+    }
+}
+
+@media only screen and (min-width: 481px) {
+    img.home {
+        width: 25px;
+        height: 20px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    img.home {
+        width: 15px;
+        height: 10px;
+    }
+}
+
+.menu {
+    height: 80px;
+}
+
+.here a {
+    text-decoration: none;
+    color: white;
+    font-family: Poppins;
+    font-weight: bolder;
+}
+
+.here a:hover {
+    color: white;
+    transition: all .6s ease;
+}
+
+.TS {
+    text-decoration: none;
+    color: rgb(150, 33, 42);
+}
+
+.test {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+/* @media */
+
+@media only screen and (min-width: 481px) {
+    h1.example {
+        font-size: 80px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    h1.example {
+        font-size: 30px;
+    }
+}
+
+
+/*
+@media only screen and (min-width: 771px) {
+    h1.example2 {
+        font-size: 80px;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    h1.example2 {
+        font-size: 55px;
+    }
+} */
