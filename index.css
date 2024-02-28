@@ -1,0 +1,143 @@
+@font-face {
+    font-family: Poppins;
+    src: url("./fonts/Poppins-Regular.ttf");
+}
+
+p {
+    font-family: Poppins;
+    text-align: center;
+    color: white;
+}
+
+.body1 {
+    padding: 0px;
+    margin: 0px;
+    position: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+.bgimg {
+    background-image: url("/images/gallery/wall.jpg");
+    background-size: cover;
+}
+
+.h11 {
+    margin-left: 10%;
+    text-align: left;
+}
+
+h1 {
+    font-family: rafaella, sans-serif;
+    font-weight: 400;
+    font-size: 120px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.TS {
+    text-decoration: none;
+    color: rgb(150, 33, 42);
+    margin: 0px;
+    padding: 0px;
+}
+
+h2 {
+    font-family: "futura-pt", sans-serif;
+    font-weight: 500;
+    color: white;
+    font-size: 60px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.h2style {
+    margin-bottom: 40px;
+    text-align: center;
+    padding: 0px;
+    margin-left: 10%;
+    text-align: left;
+}
+
+@media screen and (max-width: 600px) {
+    .h2 {
+        font-size: 30px;
+        transition: font-size .8s ease-in-out;
+    }
+}
+
+.dropbtn {
+    font-size: 45px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: transparent;
+    padding: 2px 6px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all .3s ease;
+    margin-left: 40px;
+    margin-top: 50px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 160px;
+    z-index: 1;
+    font-family: Poppins;
+    font-size: 14px;
+    border-radius: 6px;
+    margin-left: 40px;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 10px 9px;
+    text-decoration: none;
+    display: block;
+    transition: all .5s ease;
+}
+
+.dropbtn:hover {
+    transform: rotate(90deg);
+    transition: all .6s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: black;
+    opacity: 0.3;
+    border-radius: 6px;
+    transition: all .6s ease;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media screen and (max-width: 600px) {
+    .dropbtn {
+        font-size: 24px;
+        padding: 1px 4px;
+        margin-left: 5px;
+        transition: font-size .8s ease-in-out;
+    }
+    .dropdown-content {
+        min-width: 110px;
+        font-size: 12px;
+        margin-left: 5px;
+    }
+    .dropdown-content a {
+        padding: 6px 8px;
+    }
+    .h11 {
+        font-size: 240%;
+        transition: font-size .8s ease-in-out;
+    }
+}
+
+.count {
+    color: white;
+}

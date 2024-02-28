@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="om.css">
+    <link rel="stylesheet" href="https://use.typekit.net/oki2zfk.css">
+    <link rel="stylesheet" href="https://use.typekit.net/oki2zfk.css">
+    <title>Tegelstaden</title>
+</head>
+
+<body class="body2">
+    <nav class="navbar">
+        <div class="up">
+            <div class="dropdown">
+                <button class="dropbtn">&#x2630;</button>
+                <div class="dropdown-content">
+                    <a href="index.html">Hem</a>
+                    <a href="om.html">Om</a>
+                    <a href="galleri.html">Galleri</a>
+                    <a href="program.html">Program</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="center">
+            <h1 class="h12"><a class="TS" href="tegelstaden.se">Tegel Staden</a></h1>
+        </div>
+    </nav>
+
+    <h2 class="h2">Tack för din anmälan!</h2>
+    </main>
+
+    <div class="marg">
+        <h2 class="count h2" id="demo"></h2>
+        <script>
+            // Sätt datumet vi räknar ner till
+            var countDownDate = new Date("July 20, 2024 15:37:25").getTime();
+
+
+            // Uppdatera intervallet varje sekund
+            var timeInterval = 1000; // tid i ms
+            var x = setInterval(function() {
+
+                // Tid just nu
+                var now = new Date().getTime();
+
+                // Tid från datumet vi räknar ner till och nu
+                var distance = countDownDate - now;
+
+                // Beräkna dagar, timmar, minuter och sekunder
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                // Skriv ut till elementet med "demo" som id.
+                document.getElementById("demo").innerHTML = days + "d " + hours + "h " +
+                    minutes + "m " + seconds + "s ";
+
+                // Om vi räknat klart, skriv ut FILMEN UTE! i demo-elementet.
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("demo").innerHTML = "FILMEN UTE!";
+                }
+            }, timeInterval);
+        </script>
+    </div>
+
+</body>
+
+</html>

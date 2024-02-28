@@ -1,0 +1,320 @@
+@font-face {
+    font-family: Poppins;
+    src: url("./fonts/Poppins-Regular.ttf");
+}
+
+p {
+    font-family: Poppins;
+    color: white;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 600px) {
+    .h2 {
+        font-size: 25px;
+        transition: font-size .8s ease-in-out;
+    }
+    .p {
+        font-size: 14px;
+        transition: font-size .8s ease-in-out;
+    }
+    .under {
+        color: rgb(238, 183, 30);
+        font-size: 14px;
+    }
+}
+
+.body2 {
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+    position: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+.h12 {
+    font-family: rafaella, sans-serif;
+    font-weight: 400;
+    text-align: left;
+    margin-left: 31%;
+    font-size: 60px;
+    color: rgb(238, 183, 30);
+}
+
+.h2style {
+    margin-top: 20px;
+    margin: 0;
+    padding: 0;
+    display: block;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-family: "futura-pt", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: rgb(238, 183, 30);
+    font-size: 30px;
+}
+
+.margin-top {
+    margin-top: 70px;
+}
+
+.navbar {
+    background-color: transparent;
+    display: flex;
+    padding: 5px 20px;
+    height: 200px;
+}
+
+.dropbtn {
+    font-size: 45px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: transparent;
+    padding: 2px 6px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all .3s ease;
+    margin-left: 20px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    z-index: 1;
+    font-family: Poppins;
+    font-size: 14px;
+    border-radius: 6px;
+    margin-left: 20px;
+}
+
+.dropdown-content a {
+    color: rgb(238, 183, 30);
+    padding: 10px 12px;
+    text-decoration: none;
+    display: block;
+    transition: all .5s ease;
+}
+
+.dropbtn:hover {
+    transform: rotate(90deg);
+    transition: all .6s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(30, 30, 30);
+    border-radius: 6px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.center {
+    flex: 1;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .dropbtn {
+        font-size: 25px;
+        padding: 1px 4px;
+        margin-left: 5px;
+        transition: font-size .8s ease-in-out;
+    }
+    .dropdown-content {
+        min-width: 110px;
+        font-size: 12px;
+        margin-left: 5px;
+    }
+    .dropdown-content a {
+        padding: 6px 8px;
+    }
+    .h12 {
+        font-size: 240%;
+        margin-left: 21%;
+        transition: font-size .8s ease-in-out;
+    }
+}
+
+.TS {
+    text-decoration: none;
+    color: rgb(238, 183, 30);
+}
+
+input[type=text],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+.confirm {
+    background-color: rgb(226, 121, 46);
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 377px;
+    padding-right: 377px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "futura-pt", sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.confirm:hover {
+    background-color: rgb(204, 97, 20);
+}
+
+.form {
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    padding: 25px;
+    width: 800px;
+    margin: auto;
+}
+
+@media screen and (max-width: 600px) {
+    .form {
+        width: 60%;
+    }
+    .confirm {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 140px;
+        padding-right: 140px;
+        margin-top: 5px;
+        font-size: 18px;
+    }
+}
+
+.futura {
+    font-family: "futura-pt", sans-serif;
+}
+
+.footer {
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    margin-top: 70px;
+}
+
+.main-text {
+    width: 70%;
+    margin: auto;
+    text-align: left;
+}
+
+.star {
+    height: 25px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .star {
+        height: 15px;
+        display: block;
+        margin: auto;
+    }
+}
+
+hr {
+    width: 35%;
+    margin-top: 50px;
+    border-color: white;
+    color: white;
+    display: block;
+    height: 3px;
+    border-top: 1px solid white;
+    padding: 0;
+}
+
+.under {
+    color: rgb(238, 183, 30);
+    font-size: 18px;
+}
+
+table {
+    color: white;
+    margin: auto;
+    margin-bottom: 60px;
+    width: 28%;
+    font-size: 18px;
+    font-family: Poppins;
+}
+
+@media screen and (max-width: 600px) {
+    .table {
+        margin-bottom: 60px;
+        width: 28%;
+        font-size: 18px;
+        font-family: Poppins;
+    }
+}
+
+.spacer {
+    margin-right: 25px;
+}
+
+.up {
+    margin-top: 45px;
+}
+
+.img1 {
+    width: 250px;
+}
+
+.imggallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    margin-left: 16%;
+    width: 400px;
+    gap: 110px;
+}
+
+@media screen and (max-width: 600px) {
+    .imggallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        margin-left: 12%;
+        width: 400px;
+        gap: 70px;
+    }
+    .img1 {
+        width: 180px;
+    }
+}
+
+.count {
+    color: white;
+    text-align: center;
+    padding: 0px;
+    margin-top: 70px;
+    font-size: 60px;
+}
+
+.pil {
+    display: block;
+    margin: auto;
+    width: 15%;
+}
