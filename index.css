@@ -61,7 +61,7 @@ h2 {
 }
 
 @media screen and (max-width: 600px) {
-    .h2 {
+    h2 {
         font-size: 30px;
         transition: font-size .8s ease-in-out;
     }
@@ -79,6 +79,10 @@ h2 {
     transition: all .3s ease;
     margin-left: 40px;
     margin-top: 50px;
+}
+
+.dropdown {
+    width: 1em;
 }
 
 .dropdown-content {

@@ -11,7 +11,7 @@
     <title>Tegelstaden</title>
 </head>
 
-<body class="body2">
+<body class="body-confirm">
     <nav class="navbar">
         <div class="up">
             <div class="dropdown">
@@ -25,49 +25,49 @@
             </div>
         </div>
 
-        <div class="center">
-            <h1 class="h12"><a class="TS" href="tegelstaden.se">Tegel Staden</a></h1>
-        </div>
+        <header class="main-header">
+            <h1>Tegel Staden</h1>
+        </header>
     </nav>
 
-    <h2 class="h2">Tack för din anmälan!</h2>
-    </main>
+    <h2>Tack för din anmälan!</h2>
 
-    <div class="marg">
-        <h2 class="count h2" id="demo"></h2>
-        <script>
-            // Sätt datumet vi räknar ner till
-            var countDownDate = new Date("July 20, 2024 15:37:25").getTime();
-
-
-            // Uppdatera intervallet varje sekund
-            var timeInterval = 1000; // tid i ms
-            var x = setInterval(function() {
-
-                // Tid just nu
-                var now = new Date().getTime();
-
-                // Tid från datumet vi räknar ner till och nu
-                var distance = countDownDate - now;
-
-                // Beräkna dagar, timmar, minuter och sekunder
-                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-                // Skriv ut till elementet med "demo" som id.
-                document.getElementById("demo").innerHTML = days + "d " + hours + "h " +
-                    minutes + "m " + seconds + "s ";
-
-                // Om vi räknat klart, skriv ut FILMEN UTE! i demo-elementet.
-                if (distance < 0) {
-                    clearInterval(x);
-                    document.getElementById("demo").innerHTML = "FILMEN UTE!";
-                }
-            }, timeInterval);
-        </script>
+    <div class="count">
+        <h2 id="demo"></h2>
     </div>
+
+    <script>
+        // Sätt datumet vi räknar ner till
+        var countDownDate = new Date("July 20, 2024 15:37:25").getTime();
+
+
+        // Uppdatera intervallet varje sekund
+        var timeInterval = 1000; // tid i ms
+        var x = setInterval(function() {
+
+            // Tid just nu
+            var now = new Date().getTime();
+
+            // Tid från datumet vi räknar ner till och nu
+            var distance = countDownDate - now;
+
+            // Beräkna dagar, timmar, minuter och sekunder
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Skriv ut till elementet med "demo" som id.
+            document.getElementById("demo").innerHTML = days + "d " + hours + "h " +
+                minutes + "m " + seconds + "s ";
+
+            // Om vi räknat klart, skriv ut FILMEN UTE! i demo-elementet.
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "FILMEN UTE!";
+            }
+        }, timeInterval);
+    </script>
 
 </body>
 

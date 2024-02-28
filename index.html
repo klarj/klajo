@@ -24,17 +24,19 @@
         </div>
     </nav>
 
-    <div class="center">
+    <header class="center">
         <h1 class="h11"><a class="TS" href="tegelstaden.se">Tegel Staden</a></h1>
+    </header>
+
+    <div class="h2 h2style">
+        <h2>PREMIÄR 21 JUNI 2024</h2>
+        <h2 class="count" id="demo"></h2>
     </div>
 
-    <h2 class="h2 h2style">PREMIÄR 21 JUNI 2024</h2>
-
-    <h2 class="count h2 h2style" id="demo"></h2>
     <script>
+        // Tagen från W3schools: https://www.w3schools.com/howto/howto_js_countdown.asp
         // Sätt datumet vi räknar ner till
         var countDownDate = new Date("June 21, 2024 15:37:25").getTime();
-
 
         // Uppdatera intervallet varje sekund
         var timeInterval = 1000; // tid i ms

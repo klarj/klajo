@@ -9,7 +9,7 @@ p {
     font-size: 16px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .h2 {
         font-size: 25px;
         transition: font-size .8s ease-in-out;
@@ -28,13 +28,24 @@ p {
     background-color: black;
     padding: 0px;
     margin: 0px;
-    position: flex;
+    display: flex;
     flex-direction: column;
     min-height: 100vh;
     width: 100vw;
 }
 
-.h12 {
+.body-confirm {
+    background-image: url(images/alster/tegel.jpg);
+    background-size: cover;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+h1 {
     font-family: rafaella, sans-serif;
     font-weight: 400;
     text-align: left;
@@ -43,24 +54,12 @@ p {
     color: rgb(238, 183, 30);
 }
 
-.h2style {
-    margin-top: 20px;
-    margin: 0;
-    padding: 0;
-    display: block;
-    margin-bottom: 30px;
-}
-
 h2 {
     font-family: "futura-pt", sans-serif;
     font-weight: 500;
     text-align: center;
     color: rgb(238, 183, 30);
     font-size: 30px;
-}
-
-.margin-top {
-    margin-top: 70px;
 }
 
 .navbar {
@@ -117,12 +116,12 @@ h2 {
     display: block;
 }
 
-.center {
+.main-header {
     flex: 1;
     text-align: center;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .dropbtn {
         font-size: 25px;
         padding: 1px 4px;
@@ -137,16 +136,11 @@ h2 {
     .dropdown-content a {
         padding: 6px 8px;
     }
-    .h12 {
+    h1 {
         font-size: 240%;
         margin-left: 21%;
         transition: font-size .8s ease-in-out;
     }
-}
-
-.TS {
-    text-decoration: none;
-    color: rgb(238, 183, 30);
 }
 
 input[type=text],
@@ -164,10 +158,7 @@ select {
 .confirm {
     background-color: rgb(226, 121, 46);
     color: white;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 377px;
-    padding-right: 377px;
+    padding: 10px 377px 10px 377px;
     margin-top: 10px;
     border: none;
     border-radius: 4px;
@@ -189,15 +180,12 @@ select {
     margin: auto;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .form {
         width: 60%;
     }
     .confirm {
-        padding-top: 5px;
-        padding-bottom: 5px;
-        padding-left: 140px;
-        padding-right: 140px;
+        padding: 5px 140px 5px 140px;
         margin-top: 5px;
         font-size: 18px;
     }
@@ -207,12 +195,13 @@ select {
     font-family: "futura-pt", sans-serif;
 }
 
-.footer {
+footer {
     color: #fff;
+    background-color: transparent;
     text-align: center;
     padding: 10px;
     bottom: 0;
-    margin-top: 70px;
+    height: 80px;
 }
 
 .main-text {
@@ -221,30 +210,24 @@ select {
     text-align: left;
 }
 
-.star {
-    height: 25px;
+.vinyl {
+    width: 300px;
     display: block;
     margin: auto;
-    margin-top: 20px;
 }
 
-@media screen and (max-width: 600px) {
-    .star {
-        height: 15px;
-        display: block;
-        margin: auto;
-    }
-}
-
-hr {
-    width: 35%;
-    margin-top: 50px;
-    border-color: white;
-    color: white;
+.pilar {
+    width: 300px;
     display: block;
-    height: 3px;
-    border-top: 1px solid white;
-    padding: 0;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 700px) {
+    .vinyl {
+        width: 30%;
+    }
 }
 
 .under {
@@ -256,16 +239,14 @@ table {
     color: white;
     margin: auto;
     margin-bottom: 60px;
-    width: 28%;
     font-size: 18px;
     font-family: Poppins;
 }
 
-@media screen and (max-width: 600px) {
-    .table {
+@media screen and (max-width: 700px) {
+    table {
         margin-bottom: 60px;
-        width: 28%;
-        font-size: 18px;
+        font-size: 16px;
         font-family: Poppins;
     }
 }
@@ -291,7 +272,7 @@ table {
     gap: 110px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .imggallery {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -313,8 +294,10 @@ table {
     font-size: 60px;
 }
 
-.pil {
-    display: block;
-    margin: auto;
-    width: 15%;
+.recension {
+    margin-top: 50px;
+}
+
+.dropdown {
+    margin-top: 45px;
 }
