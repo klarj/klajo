@@ -31,7 +31,7 @@ body {
     top: 0;
     width: 100%;
     height: 100%;
-    background-image: url(./images/gallery/wall.jpg);
+    background-image: url("../images/gallery/wall.jpg");
     background-size: cover;
 }
 
@@ -44,7 +44,7 @@ body {
     top: 0;
     width: 100%;
     height: 100%;
-    background-image: url(./images/alster/tegel.jpg);
+    background-image: url("../images/alster/tegel.jpg");
     background-size: cover;
 }
 

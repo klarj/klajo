@@ -348,11 +348,12 @@ table {
     .form-container {
         width: 60%;
     }
-    /* Styla bekräftelseknappen med ändrad padding, marginal och storlek */
+    /* Styla confirmknappen med ändrad padding, marginal och storlek */
     .confirm {
-        padding: 5px 140px 5px 140px;
+        padding: 5px 120px 5px 120px;
         margin-top: 5px;
         font-size: 18px;
+        margin-left: 20px;
     }
     /* Styla tabellen med ändrad marginal och storlek */
     table {
