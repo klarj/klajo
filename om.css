@@ -1,7 +1,12 @@
+/* Definiera typsnittet Poppins genom att ladda in typsnittsfilen for Poppins-Regular */
+
 @font-face {
     font-family: Poppins;
     src: url("./fonts/Poppins-Regular.ttf");
 }
+
+
+/* Styla alla <p> element med Poppins typsnitt, vit färg och storlek */
 
 p {
     font-family: Poppins;
@@ -9,10 +14,16 @@ p {
     font-size: 16px;
 }
 
+
+/* Återställ standardmarginaler och padding för <body> elementet */
+
 body {
     margin: 0;
     padding: 0;
 }
+
+
+/* Styla container för sidan med svart bakgrund och flex-rapportering */
 
 .container-page {
     background-color: black;
@@ -24,6 +35,9 @@ body {
     width: 100%;
 }
 
+
+/* Styla alla <h1> element med typsnittet Rafaella, vikt, textinriktning, storlek och färg */
+
 h1 {
     font-family: rafaella, sans-serif;
     font-weight: 400;
@@ -33,6 +47,9 @@ h1 {
     color: rgb(238, 183, 30);
 }
 
+
+/* Styla alla <h2> element med Futura PT typsnitt, vikt, textinriktning, färg och storlek */
+
 h2 {
     font-family: "futura-pt", sans-serif;
     font-weight: 500;
@@ -41,12 +58,18 @@ h2 {
     font-size: 30px;
 }
 
+
+/* Styla navigationsfältet med transparent bakgrund och padding */
+
 .navbar {
     background-color: transparent;
     display: flex;
     padding: 5px 20px;
     height: 200px;
 }
+
+
+/* Styla dropdown-knappen med specifik storlek, färg och transition */
 
 .dropbtn {
     font-size: 45px;
@@ -61,6 +84,9 @@ h2 {
     margin-left: 20px;
 }
 
+
+/* Styla dropdown-innehållet med position, bakgrundsfärg, storlek, typsnitt och transition */
+
 .dropdown-content {
     display: none;
     position: absolute;
@@ -73,6 +99,9 @@ h2 {
     margin-left: 20px;
 }
 
+
+/* Styla länkar inom dropdown med färg, padding och transition */
+
 .dropdown-content a {
     color: rgb(238, 183, 30);
     padding: 10px 12px;
@@ -81,24 +110,39 @@ h2 {
     transition: all .5s ease;
 }
 
+
+/* Styla dropdown-knappen så att en hover leder till en rotering, i en transitioneffekt */
+
 .dropbtn:hover {
     transform: rotate(90deg);
     transition: all .6s ease;
 }
+
+
+/* Styla så att elementen i drop-downen highlightas */
 
 .dropdown-content a:hover {
     background-color: rgb(30, 30, 30);
     border-radius: 6px;
 }
 
+
+/* Visa dropdown-innehållet vid hover */
+
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+
+/* Styla main-header så att den centreras */
 
 .main-header {
     flex: 1;
     text-align: center;
 }
+
+
+/* Styla anmälningsfältet med specifik bredd, padding, marginal, border, border-radius, box-sizing och typsnitt */
 
 input[type=text],
 select {
@@ -110,6 +154,9 @@ select {
     box-sizing: border-box;
     font-family: Poppins;
 }
+
+
+/* Styla bekräftelseknappen med bakgrundsfärg, färg, padding, marginal, border, border-radius, typsnitt och transition */
 
 .confirm {
     background-color: rgb(226, 121, 46);
@@ -124,9 +171,15 @@ select {
     text-decoration: none;
 }
 
+
+/* Styla bekräftelseknappen vid hover med ändrad bakgrundsfärg */
+
 .confirm:hover {
     background-color: rgb(204, 97, 20);
 }
+
+
+/* Styla formulär-containern med bakgrundsfärg, padding och centrering */
 
 .form-container {
     border-radius: 5px;
@@ -136,9 +189,15 @@ select {
     margin: auto;
 }
 
+
+/* Styla element med Futura PT typsnitt */
+
 .font-futura {
     font-family: "futura-pt", sans-serif;
 }
+
+
+/* Styla footern med färg, placering och höjd */
 
 footer {
     color: #fff;
@@ -147,17 +206,26 @@ footer {
     height: 80px;
 }
 
+
+/* Styla huvudtexten med bredd, marginal och gör den vänsterställd */
+
 .main-text {
     width: 70%;
     margin: auto;
     text-align: left;
 }
 
+
+/* Styla vinylbilderna med storlek och placering */
+
 .vinyl {
     display: block;
     margin: auto;
     width: 500px;
 }
+
+
+/* Styla pilarna med storlek och margins*/
 
 .arrows {
     width: 300px;
@@ -167,10 +235,16 @@ footer {
     margin-bottom: 40px;
 }
 
+
+/* Styla text som inleder stycken med färg och storlek */
+
 .text-highlight {
     color: rgb(238, 183, 30);
     font-size: 18px;
 }
+
+
+/* Styla tabell med färg, marginaler, samt texten i tabellen med storlek, och typsnitt */
 
 table {
     color: white;
@@ -180,18 +254,30 @@ table {
     font-family: Poppins;
 }
 
+
+/* Justera endast marginal för ett element */
+
 .spacer {
     margin-right: 25px;
 }
+
+
+/* Styla en galleribild med transition när en hover går bort */
 
 .gallery-image {
     width: 250px;
     transition: transform 0.3s ease-out;
 }
 
+
+/* Styla galleribilden med transition i form av en förstorningseffekt vid hover */
+
 .gallery-image:hover {
     transform: scale(1.1);
 }
+
+
+/* Styla galleribilder med grid-layout, kolumner, rader, marginal och gap */
 
 .gallery-images {
     display: grid;
@@ -202,62 +288,83 @@ table {
     gap: 110px;
 }
 
+
+/* Styla recensionssektionen med en marginal */
+
 .recension {
     margin-top: 50px;
 }
+
+
+/* Styla dropdown-knappen med en marginal */
 
 .dropdown {
     margin-top: 45px;
 }
 
+
+/* Responsiv design för mindre skärmar (skärmar med maxbredd 700px) */
+
 @media screen and (max-width: 700px) {
+    /* Styla alla <h2> element med ändrad storlek och transition */
     .h2 {
         font-size: 25px;
         transition: font-size .8s ease-in-out;
     }
+    /* Styla alla <p> element med ändrad storlek och transition */
     .p {
         font-size: 14px;
         transition: font-size .8s ease-in-out;
     }
+    /* Styla text som inleder stycken med färg och ändrad storlek */
     .text-highlight {
         color: rgb(238, 183, 30);
         font-size: 14px;
     }
+    /* Styla dropdown-knappen med ändrad storlek, padding och marginal */
     .dropbtn {
         font-size: 25px;
         padding: 1px 4px;
         margin-left: 5px;
         transition: font-size .8s ease-in-out;
     }
+    /* Styla dropdown-innehållet med ändrad minsta bredd, font-size och marginal */
     .dropdown-content {
         min-width: 110px;
         font-size: 12px;
         margin-left: 5px;
     }
+    /* Styla länkar inom dropdown med ändrad padding */
     .dropdown-content a {
         padding: 6px 8px;
     }
+    /* Styla alla <h1> element med ändrad storlek, marginal och transition */
     h1 {
         font-size: 240%;
         margin-left: 21%;
         transition: font-size .8s ease-in-out;
     }
+    /* Styla formulär-containern med ändrad bredd */
     .form-container {
         width: 60%;
     }
+    /* Styla bekräftelseknappen med ändrad padding, marginal och storlek */
     .confirm {
         padding: 5px 140px 5px 140px;
         margin-top: 5px;
         font-size: 18px;
     }
+    /* Styla tabellen med ändrad marginal och storlek */
     table {
         margin-bottom: 60px;
         font-size: 16px;
         font-family: Poppins;
     }
+    /* Styla vinylbild vid med ändrad bredd */
     .vinyl {
         width: 400px;
     }
+    /* Styla galleribilderr med ändrat grid-layout, kolumner, rader, marginal och gap */
     .gallery-images {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -266,9 +373,11 @@ table {
         width: 400px;
         gap: 70px;
     }
+    /* Styla galleribild med ändrad bredd */
     .gallery-image {
         width: 180px;
     }
+    /* Styla pilarna med ändrad bredd */
     .arrows {
         width: 200px;
     }

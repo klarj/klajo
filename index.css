@@ -1,7 +1,12 @@
+/* Definiera typsnittet Poppins genom att ladda in typsnittsfilen for Poppins-Regular */
+
 @font-face {
     font-family: Poppins;
     src: url("./fonts/Poppins-Regular.ttf");
 }
+
+
+/* Styla alla <p> element med Poppins typsnitt, centrerad text och vit färg */
 
 p {
     font-family: Poppins;
@@ -9,10 +14,16 @@ p {
     color: white;
 }
 
+
+/* Återställ standardmarginaler och padding för <body> elementet */
+
 body {
     margin: 0;
     padding: 0;
 }
+
+
+/* Styla den övergripande container för startsidan med en bakgrundsbild och full storlek */
 
 .container-index {
     position: absolute;
@@ -24,6 +35,9 @@ body {
     background-size: cover;
 }
 
+
+/* Styla den övergripande container för bekräftelsesidan med en bakgrundsbild och full storlek */
+
 .container-confirm {
     position: absolute;
     left: 0;
@@ -34,6 +48,9 @@ body {
     background-size: cover;
 }
 
+
+/* Styla alla <h1> element med typsnittet Rafaella, sans-serif, storlek och placering */
+
 h1 {
     font-family: rafaella, sans-serif;
     font-weight: 400;
@@ -42,10 +59,16 @@ h1 {
     padding: 0px;
 }
 
+
+/* Justera marginal och textinriktning för header container */
+
 .header-container {
     margin-left: 10%;
     text-align: left;
 }
+
+
+/* Styla titellänkar för startsidan och confirm-sidan för anmälan */
 
 .title-index {
     text-decoration: none;
@@ -61,6 +84,9 @@ h1 {
     padding: 0px;
 }
 
+
+/* Styla alla <h2> element med Futura PT typsnitt, storlek, färg och placering */
+
 h2 {
     font-family: "futura-pt", sans-serif;
     font-weight: 500;
@@ -70,6 +96,9 @@ h2 {
     font-size: 320%;
 }
 
+
+/* Justera marginal, centrering av text och padding */
+
 .text-container {
     margin-bottom: 40px;
     text-align: center;
@@ -77,6 +106,9 @@ h2 {
     margin-left: 10%;
     text-align: left;
 }
+
+
+/* Styla dropdown knappen med specifik storlek, färg och transition */
 
 .dropbtn {
     font-size: 45px;
@@ -92,9 +124,15 @@ h2 {
     margin-top: 50px;
 }
 
+
+/* Justera storleken på dropdown-knappen */
+
 .dropdown {
     width: 1em;
 }
+
+
+/* Styla dropdown-innehållet med position, bakgrundsfärg, storlek och typsnitt */
 
 .dropdown-content {
     display: none;
@@ -108,6 +146,9 @@ h2 {
     margin-left: 40px;
 }
 
+
+/* Styla länkar inom dropdown med färg, padding och transition */
+
 .dropdown-content a {
     color: white;
     padding: 10px 9px;
@@ -116,10 +157,16 @@ h2 {
     transition: all .5s ease;
 }
 
+
+/* Styla dropdown-knappen så att en hover leder till en rotering, i en transitioneffekt */
+
 .dropbtn:hover {
     transform: rotate(90deg);
     transition: all .6s ease;
 }
+
+
+/* Styla så att elementen i drop-downen highlightas */
 
 .dropdown-content a:hover {
     background-color: black;
@@ -128,40 +175,54 @@ h2 {
     transition: all .6s ease;
 }
 
+
+/* Visa dropdown-innehållet vid hover */
+
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+
+/* Styla nedräkningen med vit färg */
 
 .count {
     color: white;
 }
 
+
+/* Responsiv design för mindre skärmar (skärmar med maxbredd 700px) */
+
 @media screen and (max-width: 700px) {
+    /* Justera storleken på alla <h2> element, med en transition */
     h2 {
         font-size: 140%;
         transition: font-size .8s ease-in-out;
     }
+    /* Justera storleken på dropdown-knappen, med en transition */
     .dropbtn {
         font-size: 24px;
         padding: 1px 4px;
         margin-left: 5px;
         transition: font-size .8s ease-in-out;
     }
+    /* Justera storleken på dropdown-innehållet */
     .dropdown-content {
         min-width: 110px;
         font-size: 12px;
         margin-left: 5px;
     }
+    /* Justera storleken på länkar inom dropdown */
     .dropdown-content a {
         padding: 6px 8px;
     }
+    /* Justera storleken på titellänken för startsidan, med en transition */
     .title-index {
         font-size: 280%;
         transition: font-size .8s ease-in-out;
     }
+    /* Justera storleken på titellänken för bekräftelsesidan, med en transition */
     .title-confirm {
         font-size: 240%;
         transition: font-size .8s ease-in-out;
     }
-    .text-index {}
 }
