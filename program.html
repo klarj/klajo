@@ -11,72 +11,77 @@
     <title>Tegelstaden</title>
 </head>
 
-<body class="body2">
-    <nav class="navbar">
-        <div class="dropdown">
-            <button class="dropbtn">&#x2630;</button>
-            <div class="dropdown-content">
-                <a href="index.html">Hem</a>
-                <a href="om.html">Om</a>
-                <a href="galleri.html">Galleri</a>
-                <a href="program.html">Program</a>
+<body>
+    <div class="container-page">
+        <nav class="navbar">
+            <div class="dropdown">
+                <button class="dropbtn">&#x2630;</button>
+                <div class="dropdown-content">
+                    <a href="index.html">Hem</a>
+                    <a href="om.html">Om</a>
+                    <a href="galleri.html">Galleri</a>
+                    <a href="program.html">Program</a>
+                </div>
+            </div>
+
+            <header class="main-header">
+                <h1>Tegel Staden</h1>
+            </header>
+        </nav>
+
+        <div>
+            <h2>Premiärkvällen</h2>
+            <br>
+            <table>
+                <tr>
+                    <td><span class="under spacer">Var?</span> GNEMA, Norrköping</td>
+                </tr>
+                <tr>
+                    <td><span class="under spacer">17.00</span> Mingel i foajen </td>
+                </tr>
+                <tr>
+                    <td><span class="under spacer">17.45</span> Foto på “röda mattan”</td>
+                </tr>
+                <tr>
+                    <td><span class="under spacer">18.00</span> Filmvisning</td>
+                </tr>
+                <tr>
+                    <td><span class="under spacer">21.00</span> Realesefest med bubbel och tilltugg</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="arrows">
+            <img src="images/alster/pilar.svg" alt="Pilar">
+        </div>
+
+        <div>
+            <h2>Anmäl dig till premiären här!</h2>
+            <br>
+            <div class="form-container">
+                <form action="/action_page.php">
+                    <label class="font-futura" for="fname">Förnamn</label>
+                    <br>
+                    <input type="text" id="fname" name="firstname" placeholder="Ditt namn..">
+                    <br>
+                    <label class="font-futura" for="lname">Efternamn</label>
+                    <br>
+                    <input type="text" id="lname" name="lastname" placeholder="Ditt efternamn..">
+                    <br>
+                    <label class="font-futura" for="email">Email</label>
+                    <br>
+                    <input type="text" id="email" name="email" placeholder="Din email..">
+                    <br>
+                    <br>
+                    <a class="confirm" href="confirm.html">Anmäl</a>
+                </form>
             </div>
         </div>
 
-        <header class="main-header">
-            <h1>Tegel Staden</h1>
-        </header>
-    </nav>
-
-    <h2>Premiärkvällen</h2>
-
-    <br>
-    <table>
-        <tr>
-            <td><span class="under spacer">Var?</span> GNEMA, Norrköping</td>
-        </tr>
-        <tr>
-            <td><span class="under spacer">17.00</span> Mingel i foajen </td>
-        </tr>
-        <tr>
-            <td><span class="under spacer">17.45</span> Foto på “röda mattan”</td>
-        </tr>
-        <tr>
-            <td><span class="under spacer">18.00</span> Filmvisning</td>
-        </tr>
-        <tr>
-            <td><span class="under spacer">21.00</span> Realesefest med bubbel och tilltugg</td>
-        </tr>
-    </table>
-
-    <img class="pilar" src="images/alster/pilar.svg" alt="Pilar">
-
-    <h2>Anmäl dig till premiären här!</h2>
-
-    <br>
-
-    <div class="form">
-        <form action="/action_page.php">
-            <label class="futura" for="fname">Förnamn</label>
-            <br>
-            <input type="text" id="fname" name="firstname" placeholder="Ditt namn..">
-            <br>
-            <label class="futura" for="lname">Efternamn</label>
-            <br>
-            <input type="text" id="lname" name="lastname" placeholder="Ditt efternamn..">
-            <br>
-            <label class="futura" for="email">Email</label>
-            <br>
-            <input type="text" id="email" name="email" placeholder="Din email..">
-            <br>
-            <br>
-            <a class="confirm" href="confirm.html">Anmäl</a>
-        </form>
+        <footer class="footer">
+            <p>&copy2024 NORCOPIA PICTURES. ENT. ALL RIGHTS RESERVED.</p>
+        </footer>
     </div>
-    <footer class="footer">
-        <p>&copy2024 NORCOPIA PICTURES. ENT. ALL RIGHTS RESERVED.</p>
-    </footer>
-
 </body>
 
 </html>

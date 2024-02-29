@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="om.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://use.typekit.net/oki2zfk.css">
     <link rel="stylesheet" href="https://use.typekit.net/oki2zfk.css">
     <title>Tegelstaden</title>
 </head>
 
-<body class="body-confirm">
-    <nav class="navbar">
-        <div class="up">
+<body>
+    <div class="container-confirm">
+        <nav>
             <div class="dropdown">
                 <button class="dropbtn">&#x2630;</button>
                 <div class="dropdown-content">
@@ -23,23 +23,20 @@
                     <a href="program.html">Program</a>
                 </div>
             </div>
+        </nav>
+        <div class="header-container">
+            <h1 class="title-confirm">Tegel Staden</h1>
         </div>
-
-        <header class="main-header">
-            <h1>Tegel Staden</h1>
-        </header>
-    </nav>
-
-    <h2>Tack för din anmälan!</h2>
-
-    <div class="count">
-        <h2 id="demo"></h2>
+        <div class="text-container">
+            <h2>Tack för din anmälan!</h2>
+            <h2 class="count" id="demo"></h2>
+        </div>
     </div>
 
     <script>
+        // Tagen från W3schools: https://www.w3schools.com/howto/howto_js_countdown.asp
         // Sätt datumet vi räknar ner till
-        var countDownDate = new Date("July 20, 2024 15:37:25").getTime();
-
+        var countDownDate = new Date("June 21, 2024 15:37:25").getTime();
 
         // Uppdatera intervallet varje sekund
         var timeInterval = 1000; // tid i ms

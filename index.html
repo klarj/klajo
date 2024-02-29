@@ -11,28 +11,27 @@
     <title>Tegelstaden</title>
 </head>
 
-<body class="body1 bgimg">
-    <nav>
-        <div class="dropdown">
-            <button class="dropbtn">&#x2630;</button>
-            <div class="dropdown-content">
-                <a href="index.html">Hem</a>
-                <a href="om.html">Om</a>
-                <a href="galleri.html">Galleri</a>
-                <a href="program.html">Program</a>
+<body>
+    <div class="container-index">
+        <nav>
+            <div class="dropdown">
+                <button class="dropbtn">&#x2630;</button>
+                <div class="dropdown-content">
+                    <a href="index.html">Hem</a>
+                    <a href="om.html">Om</a>
+                    <a href="galleri.html">Galleri</a>
+                    <a href="program.html">Program</a>
+                </div>
             </div>
+        </nav>
+        <div class="header-container">
+            <h1 class="title-index">Tegel Staden</h1>
         </div>
-    </nav>
-
-    <header class="center">
-        <h1 class="h11"><a class="TS" href="tegelstaden.se">Tegel Staden</a></h1>
-    </header>
-
-    <div class="h2 h2style">
-        <h2>PREMIÄR 21 JUNI 2024</h2>
-        <h2 class="count" id="demo"></h2>
+        <div class="text-container">
+            <h2>Premiär 21 juni 2024</h2>
+            <h2 id="demo"></h2>
+        </div>
     </div>
-
     <script>
         // Tagen från W3schools: https://www.w3schools.com/howto/howto_js_countdown.asp
         // Sätt datumet vi räknar ner till
@@ -65,7 +64,6 @@
             }
         }, timeInterval);
     </script>
-
 </body>
 
 </html>
