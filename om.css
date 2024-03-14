@@ -210,7 +210,7 @@ footer {
 /* Styla huvudtexten med bredd, marginal och gör den vänsterställd */
 
 .main-text {
-    width: 70%;
+    width: 30em;
     margin: auto;
     text-align: left;
 }
